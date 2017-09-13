@@ -1,0 +1,87 @@
+html,
+body{
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    }
+
+.areabg{
+		
+		z-index: 2;
+		max-height: 100%;
+		max-width: 40%;
+		font-size: 1.0em;
+		position: absolute;
+		overflow: auto;
+		background-color: #160D7D;
+		opacity: 0.8;
+		left: 1%;
+		top: 2%;
+
+}
+
+.list{
+		
+		margin: 5px;
+		padding: 0;	
+
+}
+
+.map {
+    	z-index: 1;
+    	height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	
+	}
+
+
+.item{
+		
+		background-color: #15E97F;
+		padding: 10px;
+		text-align: center;
+		margin: 0;
+		
+		
+}
+
+.item:hover {
+		
+		
+		background-color: black;
+		color: white;
+
+}
+
+
+.searchin{
+		
+		font-size: 1.4em;
+		text-align: center;
+		background-color: #9CF57D;
+		border: solid Black 1px;
+		padding: 10px 20px;
+		
+}
+
+
+@media (max-width:610px)
+{
+	.map
+	{
+		margin-top: 52px;
+	}
+
+	.location-list
+	{
+		margin: 5px;
+	}
+
+	.search-area,
+	.search-input 
+	{
+		width: 100%;
+		overflow: hidden;
+	}
+}
