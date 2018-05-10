@@ -2,6 +2,7 @@
 
 ## Setup
 Clone this repository and open index.html in your browser, make sure you have an active internet connection.<br>
+This website is live at https://arpitmalik.github.io/Neighborhood-Map/
 
 ## Libraries, frameworks and APIs used
 
