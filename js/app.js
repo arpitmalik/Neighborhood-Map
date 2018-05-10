@@ -51,7 +51,7 @@ function Location(att)
 	// Wiki API
 	this.get = function() {
 		var links = [];
-		var wUrl = 'http://en.wikipedia.org/w/api.php?action=opensearch&search=' + self.title + '&format=json&callback=wikiCallback';
+		var wUrl = 'https://en.wikipedia.org/w/api.php?action=opensearch&search=' + self.title + '&format=json&callback=wikiCallback';
 
 		$.getJSON({	url: wUrl,
 			dataType: "jsonp",}).done(function(response)
@@ -60,7 +60,7 @@ function Location(att)
 				for (var x=0; x < result.length; x++)
 				{
 					var resultString = result[x];
-					var wikilink = 'http://en.wikipedia.org/wiki/' + resultString;
+					var wikilink = 'https://en.wikipedia.org/wiki/' + resultString;
 					links.push('<li><a href="' + wikilink + '" target="_blank">' + resultString + '</a></li>');
 		
 		}
